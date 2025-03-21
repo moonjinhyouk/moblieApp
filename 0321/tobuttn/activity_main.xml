@@ -9,13 +9,13 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/first"/>
+        android:text="첫번째 버튼"/>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/second"/>
+        android:text="두번째 버튼"/>
 
 
 </LinearLayout>
