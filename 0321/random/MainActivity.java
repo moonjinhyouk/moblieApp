@@ -11,13 +11,14 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView textViewRandomNumber = findViewById(R.id.textViewRandomNumber);
+    private TextView textViewRandomNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        textViewRandomNumber = findViewById(R.id.textViewRandomNumber);
 
     }
 
