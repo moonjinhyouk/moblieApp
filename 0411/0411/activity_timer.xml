@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center">
+
+    <TextView android:id="@+id/timerTextView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="00:00" android:textSize="40sp" />
+
+    <Button android:id="@+id/startTimerButton" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="시작" />
+
+    <Button android:id="@+id/stopTimerButton" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="정지" />
+</LinearLayout>
