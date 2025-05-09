@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋은 아침 ☀️"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editRoutine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="새로운 아침 작업을 입력하세요"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작업 추가"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아침 알람 설정"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="통계 보기"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textTasksLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="당신의 아침 작업:"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"/>
+
+    <ListView
+        android:id="@+id/listTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
