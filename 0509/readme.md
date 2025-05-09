@@ -58,6 +58,92 @@
 
 
 
+# 🌞 **Morning Spark** 앱
+
+**Morning Spark**는 아침 일정을 관리하고, 아침 알람을 설정하며, 완료한 아침 작업의 통계를 확인할 수 있는 안드로이드 앱입니다. 이 앱은 하루를 활기차게 시작할 수 있도록 돕습니다.
+
+---
+
+## 🚀 주요 기능
+
+- **작업 추가**: 새로운 아침 작업을 입력하여 목록에 추가할 수 있습니다.
+- **아침 알람 설정**: 아침 7시에 알람을 설정하여 하루를 시작하도록 도와줍니다.
+- **통계 보기**: 완료된 아침 작업의 통계를 통해 성취감을 느낄 수 있습니다.
+
+---
+
+## 📸 화면 레이아웃
+
+앱의 메인 화면은 사용자 인터페이스가 직관적으로 구성되어 있습니다. 아래 XML 코드는 앱의 주요 레이아웃을 설명합니다.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 인사말 텍스트 -->
+    <TextView
+        android:id="@+id/textGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋은 아침 ☀️"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <!-- 아침 작업 입력란 -->
+    <EditText
+        android:id="@+id/editRoutine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="새로운 아침 작업을 입력하세요"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 작업 추가 버튼 -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작업 추가"
+        android:layout_marginTop="8dp"/>
+
+    <!-- 아침 알람 설정 버튼 -->
+    <Button
+        android:id="@+id/btnAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아침 알람 설정"
+        android:layout_marginTop="8dp"/>
+
+    <!-- 통계 보기 버튼 -->
+    <Button
+        android:id="@+id/btnStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="통계 보기"
+        android:layout_marginTop="8dp"/>
+
+    <!-- 작업 목록 제목 -->
+    <TextView
+        android:id="@+id/textTasksLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="당신의 아침 작업:"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"/>
+
+    <!-- 작업 목록 -->
+    <ListView
+        android:id="@+id/listTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
+
+
 
 
 
